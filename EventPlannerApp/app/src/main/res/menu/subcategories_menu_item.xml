@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/group_category" android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_catering"
+            android:title="@string/subcategory1"
+            android:checkable="true" />
+        <item
+            android:id="@+id/menu_menu_planning"
+            android:title="@string/subcategory2"
+            android:checkable="true" />
+        <item
+            android:id="@+id/menu_catering_venues"
+            android:title="@string/subcategory3"
+            android:checkable="true" />
+        <item
+            android:id="@+id/menu_event_catering"
+            android:title="@string/subcategory4"
+            android:checkable="true" />
+        <item
+            android:id="@+id/menu_beverages"
+            android:title="@string/subcategory5"
+            android:checkable="true" />
+        <item
+            android:id="@+id/menu_cakes_sweets"
+            android:title="@string/subcategory6"
+            android:checkable="true" />
+        <item
+            android:id="@+id/menu_specialty_products"
+            android:title="@string/subcategory7"
+            android:checkable="true" />
+        <item
+            android:id="@+id/menu_photography"
+            android:title="@string/subcategory8"
+            android:checkable="true" />
+        <item
+            android:id="@+id/menu_videography"
+            android:title="@string/subcategory9"
+            android:checkable="true" />
+        <item
+            android:id="@+id/menu_drone_footage"
+            android:title="@string/subcategory10"
+            android:checkable="true" />
+        <item
+            android:id="@+id/menu_post_production"
+            android:title="@string/subcategory11"
+            android:checkable="true" />
+        <item
+            android:id="@+id/menu_photos_albums"
+            android:title="@string/subcategory12"
+            android:checkable="true" />
+        <item
+            android:id="@+id/menu_video_materials"
+            android:title="@string/subcategory13"
+            android:checkable="true" />
+        <item
+            android:id="@+id/menu_digital_products"
+            android:title="@string/subcategory14"
+            android:checkable="true" />
+        <item
+            android:id="@+id/menu_additional_products"
+            android:title="@string/subcategory15"
+            android:checkable="true" />
+    </group>
+
+</menu>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".fragments.OrganizatorProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pregled i upravljanje nalogom"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Ime -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ime"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ime"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Prezime -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prezime"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Prezime"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Email -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email adresa"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@android:color/darker_gray"
+            android:enabled="false"
+            android:focusable="false"
+            android:textColor="@android:color/black" />
+
+        <!-- Telefon -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefon"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Broj telefona"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"
+            android:inputType="number"
+            android:digits="0123456789" />
+
+
+        <!-- Dugme Sačuvaj -->
+        <Button
+            android:id="@+id/btnSaveProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sačuvaj"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnChangePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Promeni lozinku"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            android:textColor="@android:color/white" />
+        <!-- Dugme Deactivate account -->
+        <Button
+            android:id="@+id/btn_deactivate_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deactivate account"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"
+            android:layout_gravity="center" />
+    </LinearLayout>
+</ScrollView>

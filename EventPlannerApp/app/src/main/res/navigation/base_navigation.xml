@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/base_navigation"
+    app:startDestination="@+id/nav_vlasnik_manage_employees"
+    >
+    <fragment
+        android:id="@+id/nav_vlasnik_manage_employees"
+        android:name="com.example.eventplannerapp.fragments.vlasnik.ManageEmployeesFragment"
+        android:label="Manage Employees"
+        tools:layout="@layout/fragment_manage_employees"
+        />
+
+    <fragment
+        android:id="@+id/nav_manage_products"
+        android:name="com.example.eventplannerapp.fragments.vlasnik.ProductsPageFragment"
+        android:label="Products"
+        tools:layout="@layout/fragment_products_page"
+        app:popUpTo="@+id/nav_vlasnik_test1"
+        app:popUpToInclusive="true"
+        />
+
+    <fragment
+        android:id="@+id/nav_manage_services"
+        android:name="com.example.eventplannerapp.fragments.vlasnik.ServicePageFragment"
+        android:label="Manage services"
+        tools:layout="@layout/fragment_service_page"
+        app:popUpTo="@+id/nav_vlasnik_test1"
+        app:popUpToInclusive="true"
+        />
+
+    <fragment
+        android:id="@+id/nav_create_product"
+        android:name="com.example.eventplannerapp.fragments.vlasnik.CreateProductFragment"
+        android:label="Create product"
+        tools:layout="@layout/fragment_create_product"
+        app:popUpTo="@+id/nav_vlasnik_test1"
+        app:popUpToInclusive="true"
+        />
+    <fragment
+        android:id="@+id/nav_create_service"
+        android:name="com.example.eventplannerapp.fragments.vlasnik.CreateServiceFragment"
+        android:label="Create service"
+        tools:layout="@layout/fragment_create_service"
+        app:popUpTo="@+id/nav_vlasnik_test1"
+        app:popUpToInclusive="true"
+        />
+    <fragment
+        android:id="@+id/nav_create_package"
+        android:name="com.example.eventplannerapp.fragments.vlasnik.CreatePackageFragment"
+        android:label="Create Package"
+        tools:layout="@layout/fragment_create_package"
+        app:popUpTo="@+id/nav_vlasnik_test1"
+        app:popUpToInclusive="true"
+        />
+    <fragment
+        android:id="@+id/nav_manage_packages"
+        android:name="com.example.eventplannerapp.fragments.vlasnik.PackagePageFragment"
+        android:label="Manage packages"
+        tools:layout="@layout/fragment_package_page"
+        app:popUpTo="@+id/nav_vlasnik_test1"
+        app:popUpToInclusive="true"
+        />
+    <fragment
+        android:id="@+id/nav_create_employee"
+        android:name="com.example.eventplannerapp.fragments.vlasnik.CreateEmployeeFragment"
+        android:label="Create an Employee"
+        tools:layout="@layout/fragment_create_employee"
+        app:popUpTo="@+id/nav_vlasnik_test1"
+        app:popUpToInclusive="true"
+        />
+    <fragment
+        android:id="@+id/nav_employee_edit_work_hours"
+        android:name="com.example.eventplannerapp.fragments.vlasnik.EmployeeEditWorkHours"
+        android:label="Edit Work Hours"
+        tools:layout="@layout/fragment_employee_edit_work_hours"
+        app:popUpTo="@+id/nav_vlasnik_test1"
+        app:popUpToInclusive="true"
+        />
+    <fragment
+        android:id="@+id/nav_employee_calendar"
+        android:name="com.example.eventplannerapp.fragments.vlasnik.EmployeeCalendarFragment"
+        android:label="Employee Calendar"
+        tools:layout="@layout/fragment_employee_calendar"
+        app:popUpTo="@+id/nav_vlasnik_test1"
+        app:popUpToInclusive="true"
+        />
+    <fragment
+        android:id="@+id/nav_add_employee_event"
+        android:name="com.example.eventplannerapp.fragments.vlasnik.CreateEmployeeEvent"
+        android:label="Add Event"
+        tools:layout="@layout/fragment_create_employee_event"
+        app:popUpTo="@+id/nav_vlasnik_test1"
+        app:popUpToInclusive="true"
+        />
+    <fragment
+        android:id="@+id/nav_pricelist"
+        android:name="com.example.eventplannerapp.fragments.vlasnik.PricelistPageFragment"
+        android:label="Pricelist"
+        tools:layout="@layout/fragment_price_list_list"
+        app:popUpTo="@+id/nav_vlasnik_test1"
+        app:popUpToInclusive="true"
+        >
+        <action
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/nav_update_pricelist">
+            <argument
+                android:name="product"
+                app:argType="com.example.eventplannerapp.model.Product"/>
+        </action>
+        </fragment>
+    <fragment
+        android:id="@+id/nav_update_pricelist"
+        android:name="com.example.eventplannerapp.fragments.vlasnik.UpdatePriceFragment"
+        android:label="Update price"
+        tools:layout="@layout/fragment_update_price"
+        app:popUpTo="@+id/nav_vlasnik_test1"
+        app:popUpToInclusive="true">
+        <argument
+            android:name="product"
+            app:argType="com.example.eventplannerapp.model.Product" />
+        </fragment>
+
+    <fragment
+        android:id="@+id/nav_product_detail"
+        android:name="com.example.eventplannerapp.fragments.ProductDetailsFragment"
+        android:label="Product Detail">
+        <argument
+            android:name="selectedProduct"
+            app:argType="com.example.eventplannerapp.model.Product" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_service_detail"
+        android:name="com.example.eventplannerapp.fragments.ServiceDetailsFragment"
+        android:label="Service Detail">
+        <argument
+            android:name="selectedService"
+            app:argType="com.example.eventplannerapp.model.Service" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_vlasnik_profile"
+        android:name="com.example.eventplannerapp.fragments.VlasnikProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_vlasnik_profile"
+        app:popUpTo="@+id/nav_events_view"
+        app:popUpToInclusive="true"
+        />
+
+
+    <fragment
+        android:id="@+id/nav_service_pricelist"
+        android:name="com.example.eventplannerapp.fragments.vlasnik.ServicePricelistPageFragment"
+        android:label="Pricelist"
+        tools:layout="@layout/fragment_service_pricelist"
+        app:popUpTo="@+id/nav_vlasnik_test1"
+        app:popUpToInclusive="true">
+        <action
+            android:id="@+id/action_listServiceFragment_to_updateServiceFragment"
+            app:destination="@id/nav_update_service_pricelist">
+            <argument
+                android:name="service"
+                app:argType="com.example.eventplannerapp.model.Service"/>
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_update_service_pricelist"
+        android:name="com.example.eventplannerapp.fragments.vlasnik.UpdateServicePriceFragment"
+        android:label="Update price"
+        tools:layout="@layout/fragment_update_service_price"
+        app:popUpTo="@+id/nav_vlasnik_test1"
+        app:popUpToInclusive="true">
+        <argument
+            android:name="service"
+            app:argType="com.example.eventplannerapp.model.Service" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_manage_ratings"
+        android:name="com.example.eventplannerapp.fragments.vlasnik.ManageRatingsFragment"
+        android:label="Manage Ratings"
+        tools:layout="@layout/fragment_manage_ratings"
+        app:popUpTo="@+id/nav_vlasnik_test1"
+        app:popUpToInclusive="true"
+        />
+
+    <fragment
+        android:id="@+id/nav_notifications"
+        android:name="com.example.eventplannerapp.fragments.NotificationsView"
+        android:label="Notifications"
+        tools:layout="@layout/fragment_notifications_view"
+        />
+
+</navigation>

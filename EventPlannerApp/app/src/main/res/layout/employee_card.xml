@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:id="@+id/employee_card_item"
+    android:background="@color/not_ugly_card">
+
+    <!-- Employee Name -->
+    <TextView
+        android:id="@+id/employee_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="John Doe"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <!-- Employee Email -->
+    <TextView
+        android:id="@+id/employee_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="john.doe@example.com"
+        android:textSize="16sp"/>
+
+    <!-- Employee Phone Number -->
+    <TextView
+        android:id="@+id/employee_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="555-1234"
+        android:textSize="16sp"/>
+
+    <!-- Employee Address -->
+    <TextView
+        android:id="@+id/employee_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="123 Main St, Anytown"
+        android:textSize="16sp"/>
+
+    <!-- Working Hours -->
+    <TextView
+        android:id="@+id/employee_working_hours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="09:00 - 17:00"
+        android:textSize="16sp"/>
+
+    <!-- Account Status -->
+    <TextView
+        android:id="@+id/employee_active"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Active"
+        android:textSize="16sp"/>
+
+</LinearLayout>

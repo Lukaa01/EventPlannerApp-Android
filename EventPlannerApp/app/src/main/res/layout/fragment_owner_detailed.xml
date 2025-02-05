@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/primary">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Detailed Information"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/owner_email"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="10dp"
+        android:text="Owner email"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/title"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/owner_firstname"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="10dp"
+        android:text="Owner firstname"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/owner_email"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/owner_lastname"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="10dp"
+        android:text="Owner lastname"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/owner_firstname"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/owner_address"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="10dp"
+        android:text="Owner address"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/owner_lastname"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/owner_phone"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="10dp"
+        android:text="Owner phone"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/owner_address"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/owner_categories"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="10dp"
+        android:text="Owner categories"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/owner_phone"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/owner_event_types"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="10dp"
+        android:text="Owner events"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/owner_categories"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/company_working_hours"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="10dp"
+        android:text="Company working hours"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/owner_event_types"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/company_email"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="10dp"
+        android:text="Company email"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/company_working_hours"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/company_name"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="10dp"
+        android:text="Company name"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/company_email"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/company_address"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="10dp"
+        android:text="Company address"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/company_name"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/company_phone"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="10dp"
+        android:text="Company phone"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/company_address"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/company_description"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="10dp"
+        android:text="Company description"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/company_phone"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/company_type"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="10dp"
+        android:text="Company type"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/company_description"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timestamp"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="10dp"
+        android:text="Requested"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/company_type"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:id="@+id/confirm_button"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/timestamp"
+        tools:ignore="MissingConstraints" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/reject"
+        android:id="@+id/cancel_button"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="#8C0404"
+        app:layout_constraintTop_toBottomOf="@+id/timestamp"
+        app:layout_constraintStart_toEndOf="@id/confirm_button"
+        tools:ignore="MissingConstraints"
+        android:textColor="@color/white"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Close"
+        android:id="@+id/close_button"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="@color/secondary"
+        app:layout_constraintTop_toBottomOf="@+id/timestamp"
+        app:layout_constraintStart_toEndOf="@id/cancel_button"
+        tools:ignore="MissingConstraints"
+        android:textColor="@color/white"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

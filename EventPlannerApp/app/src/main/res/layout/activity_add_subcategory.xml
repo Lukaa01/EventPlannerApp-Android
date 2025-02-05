@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddSubcategoryActivity"
+    android:background="@color/primary">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/titleTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/add_subcategory"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:textColor="@color/white"
+        android:fontFamily="serif"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="42dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/categoryButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/select_categories"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@id/descriptionInput"
+        app:layout_constraintTop_toBottomOf="@id/descriptionInput"
+        android:backgroundTint="@color/secondary"
+        android:textColor="@color/white"
+        android:layout_marginEnd="10dp"/>
+
+    <RadioGroup
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/descriptionInput"
+        app:layout_constraintStart_toEndOf="@id/categoryButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="20dp">
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/productButton"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="@string/product"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@id/descriptionInput"
+            app:layout_constraintStart_toEndOf="@id/categoryButton"
+            app:layout_constraintTop_toBottomOf="@id/descriptionInput"
+            android:backgroundTint="@color/secondary"
+            android:textColor="@color/white"
+            android:layout_marginStart="10dp"/>
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/serviceButton"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sevice"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@id/descriptionInput"
+            app:layout_constraintStart_toEndOf="@id/categoryButton"
+            app:layout_constraintTop_toBottomOf="@id/descriptionInput"
+            android:backgroundTint="@color/secondary"
+            android:textColor="@color/white"
+            android:layout_marginStart="10dp"/>
+    </RadioGroup>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameLabel"
+        app:boxStrokeColor="@color/white"
+        app:boxStrokeWidth="2dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:hint="@string/nameHint"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/descriptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameInput"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/descriptionInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/descriptionLabel"
+        app:boxStrokeColor="@color/white"
+        app:boxStrokeWidth="2dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/descriptionHint"
+            android:textColor="@color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addCategoryButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/add_subcategory"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/secondary"
+        app:layout_constraintTop_toBottomOf="@id/categoryButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="320dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

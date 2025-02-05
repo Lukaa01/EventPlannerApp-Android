@@ -1,0 +1,18 @@
+package com.example.eventplannerapp;
+
+public enum Subcategory {
+    CATERING_FOOD,
+    PLANNING_MENU,
+    OBJECT_RENTING,
+    FOOD_FOR_EVENTS,
+    DRINK,
+    CAKES_FRUIT,
+    PHOTOGRAPHING,
+    VIDEOGRAPHY,
+    DRONE_RECORDING,
+    POSTPRODUCTION_EDITING,
+    ALBUMS,
+    VIDEO_MATERIALS,
+    DIGITAL_PRODUCTS,
+    ADDITIONAL_PRODUCTS
+}

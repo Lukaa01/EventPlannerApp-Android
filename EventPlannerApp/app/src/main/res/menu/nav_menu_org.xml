@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_notifications"
+            android:title="@string/view_notifications"
+            android:icon="@drawable/bell"
+            android:orderInCategory="0"/>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_events_view"
+            android:title="Events"
+            android:icon="@drawable/ic_hamburger"
+            android:orderInCategory="100" />
+        <item android:id="@+id/nav_createEvent"
+            android:title="Create event"
+            android:icon="@drawable/ic_hamburger"
+            android:orderInCategory="100" />
+        <item android:id="@+id/nav_manage_products"
+            android:title="Products"
+            android:icon="@drawable/ic_hamburger"
+            android:orderInCategory="200"/>
+        <item android:id="@+id/nav_manage_services"
+            android:title="Services"
+            android:icon="@drawable/ic_hamburger"
+            android:orderInCategory="300" />
+        <item android:id="@+id/nav_manage_packages"
+            android:title="Packages"
+            android:icon="@drawable/ic_hamburger"
+            android:orderInCategory="300" />
+        <item android:id="@+id/nav_org_profile"
+            android:title="Profile"
+            android:icon="@drawable/ic_hamburger"
+            android:orderInCategory="300" />
+        <item android:id="@+id/nav_favouriteList"
+            android:title="Favourites"
+            android:icon="@drawable/ic_hamburger"
+            android:orderInCategory="300" />
+        <item android:id="@+id/nav_leave_rating"
+            android:title="Leave a Rating"
+            android:icon="@drawable/star"
+            android:orderInCategory="400" />
+        <item android:id="@+id/nav_manage_ratings"
+            android:title="View All Ratings"
+            android:icon="@drawable/star"
+            android:orderInCategory="400" />
+
+    </group>
+</menu>

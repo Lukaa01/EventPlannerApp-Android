@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categories">
+        <item>Restaurants, catering, food and cakes</item>
+        <item>Accommodation</item>
+        <item>Music and fun</item>
+        <item>Photo and video</item>
+        <item>Decoration and lighting</item>
+        <item>Clothes and styling</item>
+        <item>Beauty</item>
+        <item>Planning and coordination</item>
+        <item>Invitation cards</item>
+        <item>Logistics and security</item>
+    </string-array>
+
+    <string-array name="subcategories">
+        <item>Catering and food</item>
+        <item>Planning menu</item>
+        <item>Object booking</item>
+        <item>Food for events</item>
+        <item>Drink</item>
+        <item>Cakes and fruit</item>
+        <item>Photographing</item>
+        <item>Videography</item>
+        <item>Drone Recording</item>
+        <item>Postproduction and video editing</item>
+        <item>Albums</item>
+        <item>Video materials</item>
+        <item>Digital products</item>
+        <item>Additional products</item>
+    </string-array>
+</resources>

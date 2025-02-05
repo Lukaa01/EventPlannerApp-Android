@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.vlasnik.ProductsPageFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/products_page"
+        tools:context=".fragments.products.ProductsPageFragment"
+        >
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/search_text"
+                app:queryHint="Search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_black"
+                android:theme="@style/Theme.EventPlannerApp"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <Button
+                android:id="@+id/btnFilters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="@string/filters"
+                tools:ignore="TextContrastCheck" />
+
+            <!--            android:background="?android:attr/colorPrimary"-->
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:id="@+id/scroll_products_list"
+            />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/white"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="@color/secondary"
+        app:srcCompat="@drawable/ic_delete"
+        android:clickable="true"
+        android:contentDescription="@string/add"
+        android:tooltipText="@string/add"
+        android:theme="@style/Theme.EventPlannerApp"
+        tools:ignore="ImageContrastCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_edit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/white"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="135dp"
+        android:backgroundTint="@color/secondary"
+        app:srcCompat="@drawable/ic_edit"
+        android:tint="@color/white"
+        android:clickable="true"
+        android:contentDescription="@string/edit"
+        android:tooltipText="@string/edit"
+        android:theme="@style/Theme.EventPlannerApp"
+        tools:ignore="ImageContrastCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/white"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="210dp"
+        android:backgroundTint="@color/secondary"
+        app:srcCompat="@drawable/ic_add"
+        android:clickable="true"
+        android:contentDescription="@string/add"
+        android:tooltipText="@string/add"
+        android:theme="@style/Theme.EventPlannerApp"
+        tools:ignore="ImageContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

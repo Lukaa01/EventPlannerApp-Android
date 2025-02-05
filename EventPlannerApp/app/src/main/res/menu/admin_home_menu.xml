@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_notifications"
+            android:title="@string/view_notifications"
+            android:icon="@drawable/bell"
+            android:orderInCategory="0"/>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_categories_view"
+            android:title="@string/handle_categories_subcategories"
+            android:icon="@drawable/ic_hamburger"
+            android:orderInCategory="100" />
+
+        <item android:id="@+id/nav_events_view"
+            android:title="@string/handle_events"
+            android:icon="@drawable/ic_hamburger"
+            android:orderInCategory="200"/>
+
+        <item android:id="@+id/nav_report_fragment"
+            android:title="@string/handle_reports"
+            android:icon="@drawable/ic_hamburger"
+            android:orderInCategory="300"/>
+
+        <item android:id="@+id/nav_manage_rating_reports"
+            android:title="@string/manage_rating_reports"
+            android:icon="@drawable/star"
+            android:orderInCategory="400" />
+
+        <item android:id="@+id/nav_manage_ratings"
+            android:title="@string/view_all_ratings"
+            android:icon="@drawable/star"
+            android:orderInCategory="300" />
+    </group>
+</menu>

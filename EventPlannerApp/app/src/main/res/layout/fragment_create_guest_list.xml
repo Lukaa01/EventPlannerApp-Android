@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".fragments.organizator.CreateGuestListFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kreiranje liste gostiju"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etGuestName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ime i prezime gosta"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <Spinner
+            android:id="@+id/spinnerAgeGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:entries="@array/age_groups"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Da li je pozvan?"
+            android:layout_marginTop="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgInvited"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <RadioButton
+                android:id="@+id/rbInvitedYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Da"/>
+            <RadioButton
+                android:id="@+id/rbInvitedNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ne"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Da li je prihvatio poziv?"
+            android:layout_marginTop="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgAccepted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <RadioButton
+                android:id="@+id/rbAcceptedYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Da"/>
+            <RadioButton
+                android:id="@+id/rbAcceptedNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ne"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Posebni zahtevi za gosta"
+            android:layout_marginTop="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgDietaryPreferences"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+            <RadioButton
+                android:id="@+id/rbVegan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vegan"/>
+            <RadioButton
+                android:id="@+id/rbVegetarian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vegetarijanac"/>
+            <RadioButton
+                android:id="@+id/rbMeatEater"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jede meso"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnAddGuest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dodaj gosta"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnSeeGuestList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See guest list"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp" />
+    </LinearLayout>
+</ScrollView>

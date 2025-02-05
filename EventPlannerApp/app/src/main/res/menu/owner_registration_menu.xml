@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item android:id="@+id/filter_by_date"
+        android:title="Filter by date">
+        <menu>
+            <item
+                android:id="@+id/latest"
+                android:title="Get latest"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/oldest"
+                android:title="Get oldest"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+
+    <item android:id="@+id/filter_by_category"
+        android:title="Filter by category">
+        <menu android:id="@+id/category_submenu">
+        </menu>
+    </item>
+
+    <item android:id="@+id/filter_by_event_type"
+        android:title="Filter by event type">
+        <menu android:id="@+id/event_type_submenu">
+        </menu>
+    </item>
+
+    <item android:id="@+id/reset_filters"
+        android:title="Reset filters"
+        app:showAsAction="never" />
+</menu>

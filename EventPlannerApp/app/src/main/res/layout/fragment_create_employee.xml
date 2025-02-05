@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.vlasnik.CreateEmployeeFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/editTextEmployeeId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/employee_id"
+                android:inputType="number"/>
+
+            <EditText
+                android:id="@+id/editTextEmployeeEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/employee_email"
+                android:inputType="textEmailAddress"/>
+
+            <EditText
+                android:id="@+id/editTextEmployeePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/employee_password"
+                android:inputType="textPassword"/>
+
+            <EditText
+                android:id="@+id/editTextEmployeePasswordConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/employee_password_confirm"
+                android:inputType="textPassword"/>
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="15dp"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:id="@+id/editTextEmployeeFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/employee_first_name"/>
+
+            <EditText
+                android:id="@+id/editTextEmployeeLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/employee_last_name"/>
+
+            <EditText
+                android:id="@+id/editTextEmployeeAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/employee_address"/>
+
+            <EditText
+                android:id="@+id/editTextEmployeePhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/employee_phone_number"
+                android:inputType="phone"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxAccountActive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account_active"/>
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="15dp"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:id="@+id/editTextWorkingHoursStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/working_hours_start"
+                android:focusable="false"/>
+
+            <EditText
+                android:id="@+id/editTextWorkingHoursEnd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/working_hours_end"
+                android:focusable="false"/>
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="15dp"
+                android:background="?android:attr/listDivider" />
+
+            <Button
+                android:id="@+id/buttonSaveEmployee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save_employee"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+    </ScrollView>

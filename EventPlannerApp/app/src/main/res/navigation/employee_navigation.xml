@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/employee_navigation"
+    app:startDestination="@+id/nav_events_view">
+
+    <fragment
+        android:id="@+id/nav_events_view"
+        android:name="com.example.eventplannerapp.fragments.organizator.EventPageFragment"
+        android:label="Events"
+        tools:layout="@layout/fragment_event_page"
+        app:popUpTo="@+id/nav_events"
+        app:popUpToInclusive="true"
+        />
+    <fragment
+        android:id="@+id/nav_employee_profile"
+        android:name="com.example.eventplannerapp.fragments.EmployeeProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_employee_profile"
+        app:popUpTo="@+id/nav_events_view"
+        app:popUpToInclusive="true"
+        />
+
+</navigation>

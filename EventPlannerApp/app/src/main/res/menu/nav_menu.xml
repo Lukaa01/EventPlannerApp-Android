@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_notifications"
+            android:title="@string/view_notifications"
+            android:icon="@drawable/bell"
+            android:orderInCategory="0"/>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_vlasnik_manage_employees"
+            android:title="@string/manage_employees"
+            android:icon="@drawable/ic_hamburger"
+            android:orderInCategory="100" />
+
+        <item android:id="@+id/nav_manage_products"
+            android:title="@string/manage_products"
+            android:icon="@drawable/ic_hamburger"
+            android:orderInCategory="200"/>
+
+        <item android:id="@+id/nav_manage_services"
+            android:title="@string/manage_services"
+            android:icon="@drawable/ic_hamburger"
+            android:orderInCategory="300" />
+
+        <item android:id="@+id/nav_manage_packages"
+            android:title="Manage packages"
+            android:icon="@drawable/ic_hamburger"
+            android:orderInCategory="300" />
+
+        <item android:id="@+id/nav_pricelist"
+            android:title="Products pricelist"
+            android:icon="@drawable/ic_hamburger"
+            android:orderInCategory="300" />
+
+        <item android:id="@+id/nav_manage_ratings"
+            android:title="@string/manage_ratings"
+            android:icon="@drawable/ic_hamburger"
+            android:orderInCategory="400"/>
+
+        <item android:id="@+id/nav_service_pricelist"
+            android:title="Services pricelist"
+            android:icon="@drawable/ic_hamburger"
+            android:orderInCategory="300" />
+
+    </group>
+</menu>

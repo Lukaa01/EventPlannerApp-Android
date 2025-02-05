@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admin_navigation"
+    app:startDestination="@id/nav_requests_view">
+
+    <fragment
+        android:id="@+id/nav_requests_view"
+        android:name="com.example.eventplannerapp.fragments.admin.OwnerRegistrationRequestsFragment"
+        android:label="Requests"
+        tools:layout="@layout/fragment_owner_registration_requests" />
+
+    <fragment
+        android:id="@+id/nav_categories_view"
+        android:name="com.example.eventplannerapp.fragments.admin.HandleCategoriesFragment"
+        android:label="Categories"
+        tools:layout="@layout/fragment_handle_categories"
+        app:popUpTo="@+id/nav_requests_view"
+        app:popUpToInclusive="true"/>
+    <fragment
+        android:id="@+id/nav_events_view"
+        android:name="com.example.eventplannerapp.fragments.admin.HandleEventsFragment"
+        android:label="Categories"
+        tools:layout="@layout/fragment_handle_events"
+        app:popUpTo="@+id/nav_requests_view"
+        app:popUpToInclusive="true"/>
+
+    <fragment
+        android:id="@+id/ownerFragment"
+        android:name="com.example.eventplannerapp.fragments.admin.OwnerFragment"
+        android:label="Owner Fragment"
+        tools:layout="@layout/fragment_owner" />
+
+    <fragment
+        android:id="@+id/nav_report_fragment"
+        android:name="com.example.eventplannerapp.fragments.vlasnik.ReportPageFragment"
+        android:label="All reports"
+        tools:layout="@layout/fragment_report_page" />
+
+    <fragment
+        android:id="@+id/nav_user_profile"
+        android:name="com.example.eventplannerapp.fragments.vlasnik.UserProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_user_profile"
+        />
+
+    <fragment
+        android:id="@+id/nav_manage_rating_reports"
+        android:name="com.example.eventplannerapp.fragments.admin.ManageRatingReportsFragment"
+        android:label="Manage Rating Reports"
+        tools:layout="@layout/fragment_manage_rating_reports" />
+
+    <fragment
+        android:id="@+id/nav_manage_ratings"
+        android:name="com.example.eventplannerapp.fragments.vlasnik.ManageRatingsFragment"
+        android:label="Manage Ratings"
+        tools:layout="@layout/fragment_manage_ratings"
+        />
+
+    <fragment
+        android:id="@+id/nav_notifications"
+        android:name="com.example.eventplannerapp.fragments.NotificationsView"
+        android:label="Notifications"
+        tools:layout="@layout/fragment_notifications_view"
+        />
+
+
+</navigation>

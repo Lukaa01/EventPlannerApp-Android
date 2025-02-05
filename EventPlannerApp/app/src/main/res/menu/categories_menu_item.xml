@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <group android:id="@+id/options_group"
+        android:checkableBehavior="all">
+        <item android:id="@+id/hospitality_establishments"
+            android:title="@string/hospitality_establishments"
+            android:checkable="true"/>
+        <item android:id="@+id/accommodation"
+            android:title="@string/accommodation"
+            android:checkable="true"/>
+        <item android:id="@+id/music_and_entertainment"
+            android:title="@string/music_and_entertainment"
+            android:checkable="true"/>
+        <item android:id="@+id/photography_and_videography"
+            android:title="@string/photography_and_videography"
+            android:checkable="true"/>
+
+        <item android:id="@+id/decoration_and_lighting"
+            android:title="@string/decoration_and_lighting"
+            android:checkable="true"/>
+
+        <item android:id="@+id/wardrobe_and_styling"
+            android:title="@string/wardrobe_and_styling"
+            android:checkable="true"/>
+
+        <item android:id="@+id/care_and_beauty"
+            android:title="@string/care_and_beauty"
+            android:checkable="true"/>
+
+        <item android:id="@+id/planning_and_coordination"
+            android:title="@string/planning_and_coordination"
+            android:checkable="true"/>
+
+        <item android:id="@+id/invitations_and_stationery"
+            android:title="@string/invitations_and_stationery"
+            android:checkable="true"/>
+
+        <item android:id="@+id/logistics_and_security"
+            android:title="@string/logistics_and_security"
+            android:checkable="true"/>
+    </group>
+</menu>
+
